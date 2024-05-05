@@ -1,0 +1,21 @@
+.one {
+  width: 10px;
+  height: 10px;
+  color: orange;
+}
+
+.two {
+  width: 25px;
+  height: 25px;
+  color: teal;
+}
+
+.three {
+  width: 70px;
+  height: 70px;
+  color: purple;
+}
+
+.btn {
+  padding: 15;
+}/*# sourceMappingURL=style.css.map */

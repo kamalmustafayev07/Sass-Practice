@@ -1,0 +1,101 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+// .math-functions{
+//     padding:max(4px,12px);
+//     padding:min(4px,12px);
+//     padding:random($limit: 20px);
+//     padding:unit(20em);
+//     padding:unitless(10em);
+// }
+
+// .string-functions{
+//     font-family: quote('arial');
+//     font-family: unquote("arial");
+//     font-family: to-upper-case("kamal");
+//     font-family: to-lower-case("KAMAL");
+//     font-family: str-length("KAMAL");
+//     font-family: str-index("KAMAL","M");
+//     font-family: str-insert("Kamal", "L",-1);
+//     font-family: unique-id();
+// }
+
+//color functions
+
+$initial-color:blue;
+
+
+// .color-functions{
+//     width: 600px;
+//     height: 100px;
+//     // background:darken($initial-color,20);
+//     // background: lighten($initial-color,30);
+//     // background: adjust-hue($color: ($initial-color), $degrees: 50);
+//     background: mix($initial-color,  green,60);
+// }
+
+
+//----------------------------------------------------------------------------
+
+
+//LISTS
+
+$list:20px 10px 30px;
+
+.selector{
+    padding: length($list: $list);
+    padding:nth($list,3);
+    padding:set-nth($list,2,40px);
+    padding:join((10px,20px,30px),(20px,30px,40px));
+    padding:append($list, 40px)
+}
+
+//MAPS
+
+$font-weights:(
+    "regular":400,
+    "medium":500,
+    "bold":700,
+);
+
+
+.selector-2{
+    font-weight: map-get($font-weights, "bold");
+    font-weight: map-keys($font-weights);
+    font-weight: map-values($font-weights);
+    font-weight: map-has-key($font-weights,"bold");
+    font-weight: map-has-key($font-weights, "black");
+    font-weight: map-values(map-remove($font-weights,"bold"));
+}
+
+
+//CUSTOM-FUNCTIONS
+
+$one:100px;
+$two:100px;
+
+@function add($numberOne,$numberTwo){
+    @return $one+$two;
+}
+
+.section{
+    padding:add($one,$two);
+}
+
+
+@function randomColor()
+{
+    @return rgb(random(255),random(255),random(255));
+}
+
+section{
+    width: 100px;
+    height: 100px;
+    background: randomColor();
+}
+
+

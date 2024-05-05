@@ -1,0 +1,34 @@
+//Navigation
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    position: fixed;
+    font-family: sans-serif;
+    width: 100%;
+    background: white;
+
+    .logo-container{
+        margin-left: 40px;
+    }
+
+    ul{
+        list-style: none;
+        margin-right: 40px;
+        display: flex;
+        gap:20px;
+        align-items: center;
+
+        li{
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            a:hover{
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+}

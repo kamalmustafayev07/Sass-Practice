@@ -1,0 +1,34 @@
+.green {
+  background: green;
+}
+
+.teal {
+  background: teal;
+}
+
+.yellowgreen {
+  background: yellowgreen;
+}
+
+.yellow {
+  background: yellow;
+}
+
+body {
+  display: flex;
+}
+
+div {
+  flex: 1;
+  height: 100vh;
+}
+
+.normal {
+  font-size: 100px;
+  font-style: bold;
+}
+
+.emphasis {
+  font-size: 200px;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */

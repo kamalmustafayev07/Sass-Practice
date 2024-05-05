@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$redColor:red;
+$redColorHover:rgb(255, 104, 104);
+$borderRadius:5px;
+
+/////////////////////////////////////////////
+
+$main-color:#c8deff;
+$bg-image-center:no-repeat center/cover;
+$mainFont:"Roboto",sans-serif;
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#a5aae9cc,#8c9af6);
+    font-family: $mainFont;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding:50px;
+        flex-direction: row;
+    }
+}
+
+.card{
+    background: $main-color;
+    max-width: 280px;
+    padding:20px;
+    line-height: 24px;
+    margin: 5rem;
+    position: relative;
+}
+
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    border: 5px solid white;
+    position: absolute;
+    right: -25px;
+    bottom:95px;
+}
+
+.img-one{
+    background:url("./Images/one.jpg") $bg-image-center;
+}
+
+.img-two{
+    background:url("./Images/two.jpg") $bg-image-center;
+}
+
+.img-three{
+    background:url("./Images/three.jpg") $bg-image-center;
+}
+
+.img-four{
+    background: url("./Images/four.jpg") $bg-image-center;
+}
+
+.btn{
+    padding:10px 40px;
+    background-color: $redColor;
+    border:none;
+    border-radius: 10px;
+    color:white;
+}
+
+.btn:hover{
+    background-color: $redColorHover;
+}
+

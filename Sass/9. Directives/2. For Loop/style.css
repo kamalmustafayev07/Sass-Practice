@@ -1,0 +1,50 @@
+.box-1 {
+  width: 100px;
+  background: rgb(39, 190, 219);
+  margin: 1;
+  padding: 5px;
+}
+
+.box-2 {
+  width: 200px;
+  background: rgb(244, 199, 67);
+  margin: 2;
+  padding: 10px;
+}
+
+.box-3 {
+  width: 300px;
+  background: rgb(78, 61, 60);
+  margin: 3;
+  padding: 15px;
+}
+
+.list-1 {
+  width: 100px;
+  background: #bb1133;
+  padding: 20px;
+}
+
+.list-2 {
+  width: 200px;
+  background: #9b0e2a;
+  padding: 20px;
+}
+
+.list-3 {
+  width: 300px;
+  background: #7a0b21;
+  padding: 20px;
+}
+
+.list-4 {
+  width: 400px;
+  background: #590818;
+  padding: 20px;
+}
+
+.list-5 {
+  width: 500px;
+  background: #38050f;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

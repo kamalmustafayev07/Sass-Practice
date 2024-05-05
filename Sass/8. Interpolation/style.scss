@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+$one:red;
+$two:blue;
+$three:green;
+
+
+li{
+    width: 100px;
+    height: 100px;
+    list-style: none;
+    margin: 5px;
+    text-align: center;
+}
+
+.#{one}{
+    background: $one;
+}
+
+.#{two}{
+    background:$two;
+}
+
+.#{three}{
+    background: $three;
+}

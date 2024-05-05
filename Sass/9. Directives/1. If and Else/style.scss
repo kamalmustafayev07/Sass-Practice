@@ -1,0 +1,54 @@
+@mixin styles($value)
+{
+    width: $value+px;
+    height: $value+px;
+
+    @if($value>0 and $value<=20){
+        color:orange;
+    }@else if($value>20 and $value<=50)
+    {
+        color:teal;
+    }@else{
+        color:purple;
+    }
+}
+
+
+$value1:10;
+.one{
+    @include styles($value1);
+}
+
+$value2:25;
+.two{
+    @include styles($value2);
+}
+
+$value3:70;
+.three{
+    @include styles($value3);
+}
+
+//fucntion
+
+
+$one:100px;
+$two:4px;
+
+
+@function math($operator,$numberOne,$numberTwo)
+{
+    @if($operator=='+')
+    {
+        @return $numberOne+$numberTwo;
+    }@else if($operator=='-')
+    {
+        @return ($numberOne - $numberTwo);
+    }@else{
+        @return $numberOne*$numberTwo;
+    }
+}
+
+.btn{
+    padding: math('-',20,5);
+}

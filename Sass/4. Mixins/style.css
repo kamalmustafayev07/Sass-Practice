@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cards .card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ec4bd2, rgba(235, 75, 208, 0.3647058824));
+  color: white;
+}
+.cards .card-two {
+  background: linear-gradient(to bottom, #2cdb60, rgba(105, 197, 8, 0.3647058824));
+}
+.cards .card-three {
+  background: linear-gradient(to bottom, rgba(6, 13, 163, 0.3647058824), #4ba1ec);
+}
+.cards .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  height: 40%;
+}
+.cards .card-content .price {
+  font-size: 3rem;
+}
+.cards .card-content .price span {
+  font-size: 1.4rem;
+}
+.cards .card-content .card-name {
+  font-size: 2rem;
+}
+.cards .card-content .card-info {
+  font-size: 14px;
+  padding: 0 20px;
+  line-height: 1.4;
+}
+.cards .card-content button {
+  background: #141414;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 140px;
+  cursor: pointer;
+}
+.cards .card-content button:hover {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
